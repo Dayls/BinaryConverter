@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Converter1 {
 	public static void main(String [] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -54,10 +55,10 @@ class ConvertToBinary {
 			j++;
 		}
 		
-		showAnswer(binary);
+		showResult(binary);
 	}
 	
-	private void showAnswer(int[] binary) {
+	private void showResult(int[] binary) {
 		System.out.print(orig_dec + " converted to binary = ");
 		for (int i = 0; i < binary.length; i++) {
 			if(binary[i] == 1) {
@@ -101,7 +102,11 @@ class ConvertFromBinary {
 			}
 			j++;
 		}
-		System.out.println(decimal);
+		showResult(decimal);
+	}
+	
+	private void showResult(int decimal) {
+		System.out.println(orig_byn + " converter to decimal = " + decimal);
 	}
 	
 	
